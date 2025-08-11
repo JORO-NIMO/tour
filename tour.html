@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>53 Crater Lakes</title>
+    <style>
+        /* Colors */
+        :root {
+            --green: #2e7d32;
+            --cream: #f5f5dc; /* Changed to a neutral, off-white color */
+            --lakeside-blue: #4a90e2; /* Changed to a solid blue */
+            --dark-green: #000000; /* Changed to black for better readability */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--dark-green); /* Main text color */
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--green), var(--lakeside-blue));
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(46 125 50 / 0.2);
+        }
+
+        h2 {
+            color: var(--green);
+            border-bottom: 3px solid black; /* Corrected CSS syntax */
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--green);
+            color: white;
+            font-weight: 700;
+            padding: 0.8rem 1.4rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(46, 125, 50, 0.4);
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #27632a;
+        }
+
+        .btn-whatsapp svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.6rem;
+            fill: white;
+        }
+
+        .price-list {
+            display: flex;
+            gap: 2rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .price-list div {
+            background: var(--lakeside-blue);
+            color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            flex: 1;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--green);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Image gallery styles */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .image-gallery img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            flex: 1 1 280px;
+            object-fit: cover;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .price-list {
+                flex-direction: column;
+            }
+
+            .image-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        iframe.map {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>53 Crater Lakes- ONE DAY</h1>
+        <p>Discover the iconic 53 Crater Lakes, Hanging Valleys, Gorges & More,
+            all in the western arm of the east african rift Valley!</p>
+    </header>
+
+    <main>
+        <section id="highlights">
+            <h2>Tour Highlights</h2>
+            <p>Join us for an unforgettable journey through the western arm of the East African Rift Valley. Experience nature, culture, and adventure in one incredible trip!</p>
+            <ul>
+                <li>Visit <strong>53 crater lakes</strong> including the famous <em>Twin Lakes Kyema & Kamweru known for the iconic bond strengthening as stated culturally</em>,
+                    <em>Lake Nkugute (Lake Africa) with its stunning Africa map shape</em>, and <em>Lake Katinda & Mirambi for the couples</em>.</li>
+                <li>Explore <strong>12 hanging valleys</strong>, <strong>3 gorges</strong>, and <strong>straight hilltops</strong> with stunning panoramic views.</li>
+                <li>Traverse the <strong>Western Arm of the East African Rift Valley</strong>.</li>
+                <li>Relax and enjoy top resorts: <em>Kyangabi Crater Resort</em>, <em>Kingfisher Lodge</em>, and <em>Parkview Safari Lodge</em> and the twinlakes Safari lodge.</li>
+            </ul>
+
+            <div class="image-gallery" aria-label="Photos of major lakes">
+                <img src="katinda.png" alt="Lake Katinda and Mirambi" />
+                <img src="nyungu.png" alt="Lake Nyungu" />
+                <img src="nkugute.png" alt="Lake Nkugute (Lake Africa)" />
+                <img src="kamwerurock.png" alt="kamwerurock" />
+                <img src="walk.png" alt="walk" />
+                <img src="alligator.png" alt="alligator" />
+
+                <img src="swim.png" alt="swim" />
+
+
+            </div>
+        </section>
+
+        <P><a href="https://maps.app.goo.gl/VXssjyWbJh8mVZMQ9">View on Map</a></P>
+
+        <section id="activities">
+            <h2>Activities & Entertainment</h2>
+            <ul>
+                <li><strong>Alligator Tracking</strong> – Guided tours to spot these fascinating reptiles.</li>
+                <li><strong>Local Fishing</strong> – Experience traditional fishing on serene lakes.</li>
+                <li><strong>Game Park Walk</strong> – Explore wildlife and plant biodiversity with expert guides.</li>
+                <li><strong>Live Music & Cultural Dances</strong> – Enjoy vibrant music sessions throughout the tour.</li>
+                <li><strong>Heavy Lunch</strong> – Savor delicious local Ugandan cuisine.</li>
+            </ul>
+        </section>
+
+        <section id="tickets">
+            <h2>Ticket Pricing</h2>
+            <div class="price-list">
+                <div>Single Ticket: UGX 60,000</div>
+                <div>Double Ticket: UGX 110,000</div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2>Secure Your Slot</h2>
+            <p>Ready to join the adventure? Tap the button below to book your ticket via WhatsApp:</p>
+            <a href="https://wa.me/256726128513" target="_blank" class="btn-whatsapp" aria-label="Book Now on WhatsApp">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M20.52 3.48A11.74 11.74 0 0 0 3.48 20.52l-1.06 4.27 4.38-1.15a11.66 11.66 0 0 0 6.15 1.84c6.42 0 11.63-5.21 11.63-11.63 0-3.11-1.26-6.04-3.48-8.25zm-5.8 13.5c-1.02 0-1.98-.25-2.82-.69l-2.5 1.3.55-2.9a5.17 5.17 0 0 1-1.04-2.7c0-2.87 2.33-5.2 5.2-5.2 1.39 0 2.67.56 3.6 1.49a5.15 5.15 0 0 1 1.5 3.64c-.01 2.88-2.34 5.21-5.21 5.21z" />
+                </svg>
+                BOOK NOW
+            </a>
+        </section>
+
+        <section id="culture">
+            <h2>Cultural Experience</h2>
+            <p>Rubirizi District is rich in cultural heritage. Engage with local artisans, enjoy traditional dances, and learn about the unique history and traditions of the area’s communities.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 53 CRATER LAKES- ONE DAY 2025 | Contact: +256 726 128 513</p>
+    </footer>
+</body>
+</html>
